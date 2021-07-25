@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Info;
+using Microsoft.EntityFrameworkCore;
 using Modelo;
 using Persistencia;
 
@@ -57,7 +58,7 @@ namespace Procesos
                     .Single();
                     Console.WriteLine(new registroInfo().Publicar(registroProc));
                     ///////////////////////////////////////////
-                    ///////////////////////////////////////////Registro de compras
+                    ///////////////////////////////////////////Registro de ventas
 
                     Ventas venta = new()
                     {
@@ -68,9 +69,18 @@ namespace Procesos
                         Registro = registroProc
 
                     };
-                    db.ventas.Add(venta);
-                    db.SaveChanges();
-                    return true;
+                    try
+                    {
+                        db.ventas.Add(venta);
+                        db.SaveChanges();
+                        return true;
+                    }
+                    catch (DbUpdateConcurrencyException exception)
+                    {
+                        Exception ex = new Exception("Conficto de concurrencia", exception);
+                        throw ex;
+                    }
+                    
 
                     /////////////////////////////////////
                 }

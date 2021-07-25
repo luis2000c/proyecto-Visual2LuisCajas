@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Modelo;
 using Persistencia;
 
@@ -35,10 +36,19 @@ namespace Procesos
                         {
                             if (item.FechaRegistro.Day != dia)
                             {
-                                nuevoRegistro.FechaRegistro = new DateTime(anio, mes, dia);
-                                db.registros.Add(nuevoRegistro);
-                                db.SaveChanges();
-                                return false;
+                                try
+                                {
+                                    nuevoRegistro.FechaRegistro = new DateTime(anio, mes, dia);
+                                    db.registros.Add(nuevoRegistro);
+                                    db.SaveChanges();
+                                    return false;
+                                }
+                                catch (DbUpdateConcurrencyException exception)
+                                {
+                                    Exception ex = new Exception("Conficto de concurrencia", exception);
+                                    throw ex;
+                                }
+                                
                                 
 
                             }

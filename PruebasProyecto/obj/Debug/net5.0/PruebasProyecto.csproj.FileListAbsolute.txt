@@ -158,3 +158,13 @@ C:\Users\Luis Cajas\source\repos\ProyectoVisual\PruebasProyecto\bin\Debug\net5.0
 C:\Users\Luis Cajas\source\repos\ProyectoVisual\PruebasProyecto\bin\Debug\net5.0\testhost.dll.config
 C:\Users\Luis Cajas\source\repos\ProyectoVisual\PruebasProyecto\bin\Debug\net5.0\Info.dll
 C:\Users\Luis Cajas\source\repos\ProyectoVisual\PruebasProyecto\bin\Debug\net5.0\Info.pdb
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\PruebasProyecto\bin\Debug\net5.0\Simulacion.deps.json
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\PruebasProyecto\bin\Debug\net5.0\Simulacion.runtimeconfig.json
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\PruebasProyecto\bin\Debug\net5.0\Simulacion.runtimeconfig.dev.json
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\PruebasProyecto\bin\Debug\net5.0\Simulacion.exe
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\PruebasProyecto\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\PruebasProyecto\bin\Debug\net5.0\Escenarios.dll
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\PruebasProyecto\bin\Debug\net5.0\Simulacion.dll
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\PruebasProyecto\bin\Debug\net5.0\Escenarios.pdb
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\PruebasProyecto\bin\Debug\net5.0\Simulacion.pdb
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\PruebasProyecto\bin\Debug\net5.0\Simulacion.dll.config

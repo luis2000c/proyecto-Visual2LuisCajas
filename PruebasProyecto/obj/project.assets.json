@@ -160,6 +160,19 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.dll": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Relational.Design/1.1.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "1.1.6",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.SqlServer/5.0.8": {
         "type": "package",
         "dependencies": {
@@ -2502,6 +2515,19 @@
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
       },
+      "Escenarios/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Modelo": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Escenarios.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Escenarios.dll": {}
+        }
+      },
       "Info/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -2555,6 +2581,24 @@
         },
         "runtime": {
           "bin/placeholder/Procesos.dll": {}
+        }
+      },
+      "Simulacion/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Escenarios": "1.0.0",
+          "Info": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.6",
+          "Modelo": "1.0.0",
+          "Persistencia": "1.0.0",
+          "Procesos": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Simulacion.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Simulacion.dll": {}
         }
       }
     }
@@ -2896,6 +2940,21 @@
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.xml",
         "microsoft.entityframeworkcore.relational.5.0.8.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Relational.Design/1.1.6": {
+      "sha512": "kz7C0Ddnge16NRf4CU8GygYxOor3+oQ797//eXI+xbKlJr2ighAEkno9gOipDlym4SiFtKNNuOuBI/BDBGD7Kg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.relational.design/1.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/Microsoft.EntityFrameworkCore.Relational.Design.dll",
+        "lib/net451/Microsoft.EntityFrameworkCore.Relational.Design.xml",
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll",
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.xml",
+        "microsoft.entityframeworkcore.relational.design.1.1.6.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.design.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.SqlServer/5.0.8": {
@@ -8501,6 +8560,11 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "Escenarios/1.0.0": {
+      "type": "project",
+      "path": "../Escenarios/Escenarios.csproj",
+      "msbuildProject": "../Escenarios/Escenarios.csproj"
+    },
     "Info/1.0.0": {
       "type": "project",
       "path": "../Info/Info.csproj",
@@ -8520,12 +8584,19 @@
       "type": "project",
       "path": "../Procesos/Procesos.csproj",
       "msbuildProject": "../Procesos/Procesos.csproj"
+    },
+    "Simulacion/1.0.0": {
+      "type": "project",
+      "path": "../Simulacion/Simulacion.csproj",
+      "msbuildProject": "../Simulacion/Simulacion.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Escenarios >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "Procesos >= 1.0.0",
+      "Simulacion >= 1.0.0",
       "coverlet.collector >= 3.0.2",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
@@ -8558,8 +8629,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\Luis Cajas\\source\\repos\\ProyectoVisual\\Escenarios\\Escenarios.csproj": {
+              "projectPath": "C:\\Users\\Luis Cajas\\source\\repos\\ProyectoVisual\\Escenarios\\Escenarios.csproj"
+            },
             "C:\\Users\\Luis Cajas\\source\\repos\\ProyectoVisual\\Procesos\\Procesos.csproj": {
               "projectPath": "C:\\Users\\Luis Cajas\\source\\repos\\ProyectoVisual\\Procesos\\Procesos.csproj"
+            },
+            "C:\\Users\\Luis Cajas\\source\\repos\\ProyectoVisual\\Simulacion\\Simulacion.csproj": {
+              "projectPath": "C:\\Users\\Luis Cajas\\source\\repos\\ProyectoVisual\\Simulacion\\Simulacion.csproj"
             }
           }
         }

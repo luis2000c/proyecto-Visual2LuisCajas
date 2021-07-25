@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Info;
+using Microsoft.EntityFrameworkCore;
 using Modelo;
 using Persistencia;
 
@@ -69,9 +70,20 @@ namespace Procesos
                         Registro = registroProc
 
                     };
-                    db.compras.Add(compra);
-                    db.SaveChanges();
-                    return true;
+                    try
+                    {
+                        db.compras.Add(compra);
+                        db.SaveChanges();
+                        return true;
+                    }
+                    catch (DbUpdateConcurrencyException exception)
+                    {
+
+                        Exception ex = new Exception("Conficto de concurrencia", exception);
+                        throw ex;
+                    }
+                   
+                    
 
                     /////////////////////////////////////
                     

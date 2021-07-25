@@ -1,12 +1,23 @@
 using System;
+using Escenarios;
 using Persistencia;
 using Procesos;
+using Simulacion;
 using Xunit;
 
 namespace PruebasProyecto
 {
     public class UnitTest1
     {
+        public UnitTest1() {
+            EscenarioPrincipal Escenario = new EscenarioPrincipal();
+            EscenarioControl escenarioControl = new EscenarioControl();
+            escenarioControl.Grabar(Escenario);
+
+            //Datos de las compras y ventas
+            datosComprasVentas datosCV = new();
+            datosCV.Generar();
+        }
         [Theory]
         [InlineData(2021,01,01,false)]
         [InlineData(2021, 02, 03, false)]
@@ -37,27 +48,29 @@ namespace PruebasProyecto
         }
 
         [Theory]
-        [InlineData(1,"Logitech Gaming Keyboard", true)]
+        [InlineData(1, "Logitech Gaming Keyboard", true)]
         [InlineData(2, "Impresora Termica de Ticket EPSON TM", true)]
         [InlineData(3, "Laptop Lenovo", true)]
         [InlineData(4, "Sistema de Audio Portable eLasser", true)]
         [InlineData(5, "Proyector Portatil Inalambrico", true)]
         [InlineData(6, "Tablet Hyundai Koral 10XL", true)]
-        public void TestCompras(int compraID,string nomProc, bool valorEsperado) {
+        public void TestCompras(int compraID, string nomProc, bool valorEsperado)
+        {
             bool respuesta;
-            using (var db = new proyectoContext()) { 
-            //Preparación
+            using (var db = new proyectoContext())
+            {
+                //Preparación
                 comprasProc comProc = new();
-            //Ejecucion
-            respuesta = comProc.existenciaCompras(compraID);
+                //Ejecucion
+                respuesta = comProc.existenciaCompras(compraID);
 
             }
 
-                
+
             //Verificacion
             if (valorEsperado)
             {
-                Assert.True(respuesta,nomProc + " existe");
+                Assert.True(respuesta, nomProc + " existe");
             }
             else
             {
