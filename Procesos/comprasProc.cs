@@ -94,11 +94,11 @@ namespace Procesos
         }
 
         //Comprobacion de exitencia
-        public bool existenciaCompras(int compraId)
-        {
-            Compras com = _context.compras
-                .Single(com => com.ComprasId == compraId);
-            return true;
-        }
+        //public bool existenciaCompras(int compraId)
+        //{
+        //    Compras com = _context.compras
+        //        .Single(com => com.ComprasId == compraId);
+        //    return true;
+        //}
     }
 }

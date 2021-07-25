@@ -47,35 +47,35 @@ namespace PruebasProyecto
             }
         }
 
-        [Theory]
-        [InlineData(1, "Logitech Gaming Keyboard", true)]
-        [InlineData(2, "Impresora Termica de Ticket EPSON TM", true)]
-        [InlineData(3, "Laptop Lenovo", true)]
-        [InlineData(4, "Sistema de Audio Portable eLasser", true)]
-        [InlineData(5, "Proyector Portatil Inalambrico", true)]
-        [InlineData(6, "Tablet Hyundai Koral 10XL", true)]
-        public void TestCompras(int compraID, string nomProc, bool valorEsperado)
-        {
-            bool respuesta;
-            using (var db = new proyectoContext())
-            {
-                //Preparación
-                comprasProc comProc = new();
-                //Ejecucion
-                respuesta = comProc.existenciaCompras(compraID);
+        //[Theory]
+        //[InlineData(1, "Logitech Gaming Keyboard", true)]
+        //[InlineData(2, "Impresora Termica de Ticket EPSON TM", true)]
+        //[InlineData(3, "Laptop Lenovo", true)]
+        //[InlineData(4, "Sistema de Audio Portable eLasser", true)]
+        //[InlineData(5, "Proyector Portatil Inalambrico", true)]
+        //[InlineData(6, "Tablet Hyundai Koral 10XL", true)]
+        //public void TestCompras(int compraID, string nomProc, bool valorEsperado)
+        //{
+        //    bool respuesta;
+        //    using (var db = new proyectoContext())
+        //    {
+        //        //Preparación
+        //        comprasProc comProc = new();
+        //        //Ejecucion
+        //        respuesta = comProc.existenciaCompras(compraID);
 
-            }
+        //    }
 
 
-            //Verificacion
-            if (valorEsperado)
-            {
-                Assert.True(respuesta, nomProc + " existe");
-            }
-            else
-            {
-                Assert.False(respuesta, nomProc + " no existe");
-            }
-        }
+        //    //Verificacion
+        //    if (valorEsperado)
+        //    {
+        //        Assert.True(respuesta, nomProc + " existe");
+        //    }
+        //    else
+        //    {
+        //        Assert.False(respuesta, nomProc + " no existe");
+        //    }
+        //}
     }
 }
