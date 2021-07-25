@@ -1,0 +1,15 @@
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Escenarios\bin\Debug\net5.0\Escenarios.deps.json
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Escenarios\bin\Debug\net5.0\Escenarios.dll
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Escenarios\bin\Debug\net5.0\ref\Escenarios.dll
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Escenarios\bin\Debug\net5.0\Escenarios.pdb
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Escenarios\bin\Debug\net5.0\Modelo.dll
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Escenarios\bin\Debug\net5.0\Modelo.pdb
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Escenarios\obj\Debug\net5.0\Escenarios.csproj.AssemblyReference.cache
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Escenarios\obj\Debug\net5.0\Escenarios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Escenarios\obj\Debug\net5.0\Escenarios.AssemblyInfoInputs.cache
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Escenarios\obj\Debug\net5.0\Escenarios.AssemblyInfo.cs
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Escenarios\obj\Debug\net5.0\Escenarios.csproj.CoreCompileInputs.cache
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Escenarios\obj\Debug\net5.0\Escenarios.csproj.CopyComplete
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Escenarios\obj\Debug\net5.0\Escenarios.dll
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Escenarios\obj\Debug\net5.0\ref\Escenarios.dll
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Escenarios\obj\Debug\net5.0\Escenarios.pdb

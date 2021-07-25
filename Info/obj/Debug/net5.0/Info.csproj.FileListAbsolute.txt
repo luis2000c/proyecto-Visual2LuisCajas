@@ -1,0 +1,15 @@
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Info\bin\Debug\net5.0\Info.deps.json
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Info\bin\Debug\net5.0\Info.dll
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Info\bin\Debug\net5.0\ref\Info.dll
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Info\bin\Debug\net5.0\Info.pdb
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Info\obj\Debug\net5.0\Info.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Info\obj\Debug\net5.0\Info.AssemblyInfoInputs.cache
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Info\obj\Debug\net5.0\Info.AssemblyInfo.cs
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Info\obj\Debug\net5.0\Info.csproj.CoreCompileInputs.cache
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Info\obj\Debug\net5.0\Info.dll
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Info\obj\Debug\net5.0\ref\Info.dll
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Info\obj\Debug\net5.0\Info.pdb
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Info\obj\Debug\net5.0\Info.csproj.AssemblyReference.cache
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Info\bin\Debug\net5.0\Modelo.dll
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Info\bin\Debug\net5.0\Modelo.pdb
+C:\Users\Luis Cajas\source\repos\ProyectoVisual\Info\obj\Debug\net5.0\Info.csproj.CopyComplete
